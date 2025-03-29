@@ -1,0 +1,48 @@
+Explicação: PARTE DO NAV NO HEADER DA PÁGINA
+navbar-brand: Define o nome ou logotipo da marca.
+
+navbar: Define a barra de navegação.
+
+navbar-expand-lg: Expande a barra de navegação em telas grandes.
+
+navbar-light bg-light: Define um tema claro para a navbar.
+
+container-fluid: Ajusta o layout da navbar para ocupar toda a largura disponível.
+
+img: Usado dentro do navbar-brand para exibir um logotipo ao lado do nome do site.
+<!--Menu fixado no top da página fixed-top-->
+------------------------------Botão Hamburguer Bootstrap 4-------------------------
+Como funciona:
+Em telas grandes, os links aparecem normalmente.
+
+Em telas pequenas, os links ficam ocultos dentro do <div class="collapse navbar-collapse" id="navbarNav">.
+
+Quando o botão (navbar-toggler) é clicado, ele expande ou recolhe o menu.
+
+Isso melhora a usabilidade em dispositivos móveis, tornando a navegação mais intuitiva.
+
+----------------------------Dentro do menu ul e a li que serão escondidas--------
+Explicação do Código
+<ul> : Define uma lista não ordenada (unordered list) que conterá os itens de navegação (<li>).
+
+class="navbar-nav": Essa classe (navbar-nav) é fornecida pelo Bootstrap e 
+estiliza a lista para que os itens (<li>) fiquem alinhados horizontalmente dentro da navbar.
+
+: ml-auto (Bootstrap 4) ou ms-auto (Bootstrap 5)
+
+: ml-auto (margin-left: auto) move o menu para a direita da barra de navegação.
+
+No Bootstrap 5, essa classe foi substituída por ms-auto (margin-start: auto) para seguir a nova convenção baseada em direção do texto.
+
+Explicação
+navbar-expand-lg : significa que a navbar será colapsada (escondida) em telas menores e expandida (visível) em telas grandes (lg).
+
+O ponto de quebra (breakpoint) é LG (Large - ≥992px). Isso quer dizer: Em telas menores que 992px, 
+os itens do menu ficam escondidos e acessíveis apenas ao clicar no botão "hambúrguer".
+Em telas maiores ou iguais a 992px, os itens do menu aparecem normalmente, sem precisar do botão de alternância.
+-------------------------------------------------------------
+   <li class="nav-item"><!--ml-md-2 = margem esq - md= tamanho página px vai utilizar essa margem <= 760px abaixo disso não usa margem no menu Hamburguer não usa-->
+          <a class="btn btn-outline-primary ml-md-2" href="inscricao.html">Inscreva-se</a><!--class="btn btn-primary" posso utilizar em outras tags ficar efeito de botão cor azul -->
+
+----------------Dropdown  cria um menu em um item setando esses elemento menu vertical---
+
